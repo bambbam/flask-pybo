@@ -23,7 +23,7 @@ def create_app():
     if app.config['SQLALCHEMY_DATABASE_URI'].startswith("sqlite"):
         migrate.init_app(app, db, render_as_batch=True)
     else:
-        migrate.init_app(app, db);
+        migrate.init_app(app, db)
 
     from . import models
     from .views import main_views, question_views, answer_views, auth_views, comment_views, vote_views
