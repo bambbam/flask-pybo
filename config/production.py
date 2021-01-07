@@ -17,7 +17,7 @@ dictConfig({
         'file': {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
-            'Filename': os.path.join(BASE_DIR, 'logs/pyboProject.log'),
+            'filename': os.path.join(BASE_DIR, 'logs/pyboProject.log'),
             'maxBytes': 1024 * 1024 * 5,
             'backupCount': 5,
             'formatter': 'default',
